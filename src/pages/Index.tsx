@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import MetricsDashboard from "@/components/MetricsDashboard";
 import FoodSearch from "@/components/FoodSearch";
@@ -10,6 +11,7 @@ import { Separator } from "@/components/ui/separator";
 import { foodDatabase, FoodItem } from "@/data/foodData";
 import { calculateNutritionTotals } from "@/utils/nutritionCalculator";
 import { PlusCircle, Utensils } from "lucide-react";
+import BottomNav from "@/components/BottomNav";
 
 const Index = () => {
   const [loggedFoods, setLoggedFoods] = useState<Array<{ food: FoodItem; quantity: number }>>([]);
@@ -35,7 +37,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-8">
+    <div className="min-h-screen bg-gray-50 pb-20">
       <div className="max-w-md mx-auto px-4">
         <header className="py-6">
           <h1 className="text-3xl font-bold text-center text-purple-700">NutriTrack</h1>
@@ -123,6 +125,7 @@ const Index = () => {
           onAddToLog={handleAddToLog}
         />
       </div>
+      <BottomNav />
     </div>
   );
 };
