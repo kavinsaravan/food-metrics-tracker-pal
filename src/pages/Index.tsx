@@ -10,7 +10,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { foodDatabase, FoodItem } from "@/data/foodData";
 import { calculateNutritionTotals } from "@/utils/nutritionCalculator";
-import { PlusCircle, Utensils } from "lucide-react";
+import { PlusCircle, Utensils, Quiz } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
 
 const Index = () => {
@@ -42,6 +42,13 @@ const Index = () => {
         <header className="py-6">
           <h1 className="text-3xl font-bold text-center text-purple-700">NutriTrack</h1>
           <p className="text-center text-gray-500">Your personal food logger</p>
+          <Button 
+            variant="link" 
+            className="mx-auto mt-2 text-purple-600 flex items-center gap-1"
+          >
+            <Quiz className="h-4 w-4" />
+            Take a personalized quiz
+          </Button>
         </header>
 
         <Card className="p-6 mb-6 shadow-md border-none">
