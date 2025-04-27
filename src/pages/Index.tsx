@@ -10,7 +10,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import { foodDatabase, FoodItem } from "@/data/foodData";
 import { calculateNutritionTotals } from "@/utils/nutritionCalculator";
-import { PlusCircle, Utensils, Quiz } from "lucide-react";
+import { PlusCircle, Utensils, HelpCircle } from "lucide-react";
 import BottomNav from "@/components/BottomNav";
 
 const Index = () => {
@@ -46,7 +46,7 @@ const Index = () => {
             variant="link" 
             className="mx-auto mt-2 text-purple-600 flex items-center gap-1"
           >
-            <Quiz className="h-4 w-4" />
+            <HelpCircle className="h-4 w-4" />
             Take a personalized quiz
           </Button>
         </header>
