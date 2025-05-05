@@ -1,5 +1,5 @@
 
-import { Activity, Flag, Settings, LayoutDashboard } from "lucide-react";
+import { Activity, Flag, Settings, LayoutDashboard, Utensils } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -17,6 +17,14 @@ const BottomNav = () => {
         >
           <LayoutDashboard className="h-5 w-5" />
           <span className="text-xs">Dashboards</span>
+        </Button>
+        <Button 
+          variant="ghost" 
+          className="flex flex-col items-center gap-1"
+          onClick={() => navigate("/food")}
+        >
+          <Utensils className="h-5 w-5" />
+          <span className="text-xs">Food</span>
         </Button>
         <Button 
           variant="ghost" 
