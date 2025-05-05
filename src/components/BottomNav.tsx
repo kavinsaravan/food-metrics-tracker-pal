@@ -13,18 +13,18 @@ const BottomNav = () => {
         <Button 
           variant="ghost" 
           className="flex flex-col items-center gap-1"
-          onClick={() => navigate("/workouts")}
-        >
-          <Activity className="h-5 w-5" />
-          <span className="text-xs">Workouts</span>
-        </Button>
-        <Button 
-          variant="ghost" 
-          className="flex flex-col items-center gap-1"
           onClick={() => navigate("/dashboards")}
         >
           <LayoutDashboard className="h-5 w-5" />
           <span className="text-xs">Dashboards</span>
+        </Button>
+        <Button 
+          variant="ghost" 
+          className="flex flex-col items-center gap-1"
+          onClick={() => navigate("/workouts")}
+        >
+          <Activity className="h-5 w-5" />
+          <span className="text-xs">Workouts</span>
         </Button>
         <Button 
           variant="ghost" 
